@@ -37,5 +37,4 @@ to the template.
 
 WebConfiguration class is added to add HTML5 support to thymeleaf.
 
-The steps to run the test suite for spring boot application is given in the link below
-https://dzone.com/articles/unit-and-integration-tests-in-spring-boot
+The steps to run the test suite for spring boot application is given in the link https://dzone.com/articles/unit-and-integration-tests-in-spring-boot
