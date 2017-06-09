@@ -3,19 +3,23 @@
 <link>
     <title>Show Joke</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<style>
-    .joke {
-        margin: auto;
-        width: 50%;
-        border: 3px solid green;
-        padding: 10px;
-    }
-</style>
 </head>
 <body>
-    <div class="joke">
-        <p th:text="${joke}" />
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/tell-me-a-joke.html">Tell Me a joke</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/tell-me-a-joke.html">Home</a></li>
+            <li><a th:href="${sourceurl}">Joke Source</a></li>
+        </ul>
     </div>
-
+</nav>
+<div class="jumbotron">
+    <div class="joke">
+        <p th:text="${joke}" class="text-center" />
+        </div>
+</div>
 </body>
 </html>

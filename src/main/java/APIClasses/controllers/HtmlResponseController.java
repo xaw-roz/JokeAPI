@@ -37,6 +37,7 @@ public class HtmlResponseController {
                 jsonObject = new JSONObject(responseStr);
                 Joke joke = new Joke(jsonObject.getString("url"), jsonObject.getString("value"));
                 model.addAttribute("joke",joke.getContent());
+                model.addAttribute("sourceurl",joke.getUrl());
                 return "showjoke";
             } else {
                 return null;
